@@ -1,35 +1,36 @@
 <!DOCTYPE html!>
 <html>
-<head>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="score-element"> 
-        <div class="score-cards">
-            <h1 class="team-title">HOME</h1>
-            <h1 id="score-numbers-home">0</h1>
-                <div class="score-add-element">
-                    <button id="add-score" onclick="homeIncrementOne()">+1</button>
-                    <button id="add-score" onclick="homeIncrementTwo()">+2</button>
-                    <button id="add-score" onclick="homeIncrementThree()">+3</button>
-                </div>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="score-element">
+      <div class="score-cards">
+        <h1 class="team-title">HOME</h1>
+        <h1 id="score-numbers-home">0</h1>
+        <div class="score-add-element">
+          <button id="add-score" onclick="increment('home', 1)">+1</button>
+          <button id="add-score" onclick="increment('home', 2)">+2</button>
+          <button id="add-score" onclick="increment('home', 3)">+3</button>
         </div>
-        <div class="score-cards">
-            <h1 class="team-title">GUEST</h1>
-            <h1 id="score-numbers-guest">0</h1>
-                <div class="score-add-element">
-                    <button id="add-score" onclick="guestIncrementOne()">+1</button>
-                    <button id="add-score" onclick="guestIncrementTwo()" >+2</button>
-                    <button id="add-score" onclick="guestIncrementThree()">+3</button>
-                </div>
+      </div>
+      <div class="score-cards">
+        <h1 class="team-title">GUEST</h1>
+        <h1 id="score-numbers-guest">0</h1>
+        <div class="score-add-element">
+          <button id="add-score" onclick="increment('guest', 1)">+1</button>
+          <button id="add-score" onclick="increment('guest', 2)">+2</button>
+          <button id="add-score" onclick="increment('guest', 3)">+3</button>
         </div>
+      </div>
     </div>
-    <button id="new-game" onclick="resetGame()">NEW GAME</button> 
-</body>
-<script src="index.js"></script>
-
+    <button id="new-game" onclick="resetGame()">NEW GAME</button>
+  </body>
+  <script src="index.js"></script>
 </html>
-
